@@ -14,7 +14,7 @@ Instalar o NPM (npm install -g npm)
 
 Dependencias do Node que devem ser instaladas:
 
-<ul>
+<ol>
     <li>bcrypt@5.1.1</li>
     <li>body-parser@1.20.2</li>
     <li>dotenv@16.3.1</li>
@@ -23,6 +23,6 @@ Dependencias do Node que devem ser instaladas:
     <li>express@4.18.2</li>
     <li>jsonwebtoken@9.0.2</li>
     <li>nodemon@3.0.1</li>
-</ul>
+</ol>
 
 Para inicializar o sistema no desktop, basta rodar o comando npm run start:nodemon para conseguir visualizar a aplicação.
