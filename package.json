@@ -1,0 +1,12 @@
+{
+  "name": "unisync",
+  "version": "1.0.0",
+  "description": "Esse projeto esta sendo desenvolvido por contra própria usando como referência projetos criados no setor de aviação.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
