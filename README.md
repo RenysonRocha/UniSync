@@ -14,6 +14,9 @@ Instalar o NPM (npm install -g npm)
 
 Dependencias do Node que devem ser instaladas:
 
+<ul>
+    <li>renyson</li>
+</ul>
 ├── bcrypt@5.1.1
 ├── body-parser@1.20.2
 ├── dotenv@16.3.1
