@@ -1,6 +1,6 @@
 const path = require('path');
 const databaseName = 'UniSync.db';
-const db = path.join(__dirname, 'database', databaseName );
+const db = path.join(__dirname,'..',databaseName);
 module.exports = {
     dialect: 'sqlite',
     host: 'localhost',
