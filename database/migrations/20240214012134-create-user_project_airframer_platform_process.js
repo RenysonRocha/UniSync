@@ -3,15 +3,19 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.createTable('roles', { 
+    await queryInterface.createTable('user_project_airframer_platform_process', { 
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false
       },
-      name: {
-        type: Sequelize.STRING,
+      user_project_airframer_platform_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      process_id: {
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
       createdAt: {
@@ -26,6 +30,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.dropTable('roles');
+    await queryInterface.dropTable('user_project_airframer_platform_process');
   }
 };
