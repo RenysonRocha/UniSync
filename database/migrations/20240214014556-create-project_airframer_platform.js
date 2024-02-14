@@ -3,18 +3,22 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.createTable('user_project_airframer_platform', {
+    await queryInterface.createTable('project_airframer_platform', { 
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false
       },
-      user_id: {
+      project_id: {
         type: Sequelize.INTEGER,
         allowNull: false
       },
-      project_airframer_platform_id: {
+      airframer_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      platform_id: {
         type: Sequelize.INTEGER,
         allowNull: false
       },
@@ -30,6 +34,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.dropTable('user_project_airframer_platform');
+    await queryInterface.dropTable('project_airframer_platform');
   }
 };
