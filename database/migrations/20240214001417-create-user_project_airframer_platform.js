@@ -12,11 +12,17 @@ module.exports = {
       },
       user_id: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false,
+        references: {model: 'users', key: 'id'},
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       project_airframer_platform_id: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false,
+        references: {model: 'project_airframer_platform', key: 'id'},
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       createdAt: {
         type: Sequelize.DATE,

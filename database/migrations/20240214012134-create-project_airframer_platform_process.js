@@ -12,10 +12,16 @@ module.exports = {
       project_airframer_platform_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        references: {model: 'project_airframer_platform', key: 'id'},
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       process_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        references: {model: 'processes', key: 'id'},
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       process_priority: {
         type: Sequelize.INTEGER,
